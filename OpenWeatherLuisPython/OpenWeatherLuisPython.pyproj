@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6aa6884d-f71c-4e39-8ffe-e5e16547f605</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
+    <Name>OpenWeatherLuisPython</Name>
+    <RootNamespace>OpenWeatherLuisPython</RootNamespace>
+    <InterpreterId>{0cf08276-c6d0-4597-97b0-11c8faba67eb}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>OpenWeatherLuisPython - Web Deploy</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="luis_sdk\" />
+    <Folder Include="luis_sdk\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="luis_sdk\luis_action.py" />
+    <Compile Include="luis_sdk\luis_client.py" />
+    <Compile Include="luis_sdk\luis_composite_entity.py" />
+    <Compile Include="luis_sdk\luis_composite_entity_child.py" />
+    <Compile Include="luis_sdk\luis_dialog.py" />
+    <Compile Include="luis_sdk\luis_entity.py" />
+    <Compile Include="luis_sdk\luis_intent.py" />
+    <Compile Include="luis_sdk\luis_parameter.py" />
+    <Compile Include="luis_sdk\luis_parametervalue.py" />
+    <Compile Include="luis_sdk\luis_response.py" />
+    <Compile Include="luis_sdk\__init__.py" />
+    <Compile Include="sample_app.py" />
+    <Compile Include="sample_app_async.py" />
+    <Compile Include="server.py" />
+    <Compile Include="server_incomplete.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="luis_sdk\luis_client.pyc" />
+    <Content Include="luis_sdk\__init__.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_action.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_client.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_composite_entity.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_composite_entity_child.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_dialog.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_entity.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_intent.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_parameter.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_parametervalue.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\luis_response.cpython-34.pyc" />
+    <Content Include="luis_sdk\__pycache__\__init__.cpython-34.pyc" />
+    <Content Include="web.config" />
+    <None Include="OpenWeatherLuisPython - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{0cf08276-c6d0-4597-97b0-11c8faba67eb}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
