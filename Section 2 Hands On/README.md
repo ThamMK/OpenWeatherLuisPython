@@ -11,7 +11,7 @@ Microsoft's Language Understanding and Intelligent Services (LUIS) would be inte
 7.	A free account in OpenWeather to use the APIs (https://openweathermap.org/) 
 
 # Python and Azure Presentation Slide by Uli Hitzel
-Python and Azure presentation slide : https://1drv.ms/p/s!AsfjmKjMfuLTiYwqn_RbyjYa5pkrlg
+Python and Azure presentation slide : https://1drv.ms/p/s!AsfjmKjMfuLTiZpo5Bs1_TMl00QLjQ
 
 Github link : https://github.com/ulims
 
